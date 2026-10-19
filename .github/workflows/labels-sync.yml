@@ -1,4 +1,4 @@
-﻿name: Sync Labels
+name: Sync Labels
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
   labels:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: crazy-max/ghaction-github-labeler@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

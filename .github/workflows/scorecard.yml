@@ -1,4 +1,4 @@
-﻿name: Scorecard
+name: Scorecard
 
 on:
   branch_protection_rule:
@@ -16,7 +16,7 @@ jobs:
   analysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: ossf/scorecard-action@v2.3.1
         with:
           results_file: results.sarif
